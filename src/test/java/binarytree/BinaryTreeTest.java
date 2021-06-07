@@ -15,5 +15,16 @@ class BinaryTreeTest {
         int size = binaryTree.getSize();
         Assertions.assertEquals(3,size);
     }
+    @Test
+    void givenNumbersToTreeReturnsSize() {
+        BinaryTree<Integer> binaryTree = new BinaryTree();
+        int[] arr = {3,11,16,22,30,40,56,70,60,95,65,63,67};
+        for (int i : arr) {
+            binaryTree.add(i);
+        }
+        int size = binaryTree.getSize();
+        System.out.println("size"+size);
+        Assertions.assertEquals(arr.length,size);
+    }
 
 }
