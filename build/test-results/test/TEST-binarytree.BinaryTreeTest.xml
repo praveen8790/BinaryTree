@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="binarytree.BinaryTreeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-07T04:51:50" hostname="PRAVEEN-TQ9EU8H" time="0.029">
+  <properties/>
+  <testcase name="givenNumbersToTreeReturnsSize()" classname="binarytree.BinaryTreeTest" time="0.029"/>
+  <system-out><![CDATA[size13
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
