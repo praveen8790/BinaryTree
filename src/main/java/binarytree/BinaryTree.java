@@ -24,5 +24,21 @@ public class BinaryTree<T extends Comparable<T>> {
                 + this.getSizeRecursive(current.right);
     }
 
+    private boolean containsNodeRecursive(BinaryNode current, T value) {
+        if (current == null) {
+            return false;
+        }
+        if (current.key.equals(value)) {
+            return true;
+        }
+        Integer comparison = (value.compareTo((T) current.key));
+        return comparison<0
+                ? containsNodeRecursive(current.left, value)
+                : containsNodeRecursive(current.right, value);
+    }
+    public boolean containsNode(T value) {
+        return containsNodeRecursive(root, value);
+    }
+
 
     }

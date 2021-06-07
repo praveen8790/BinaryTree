@@ -1,7 +1,7 @@
 package binarytree;
 
 public class BinaryNode<T extends Comparable<T>>{
-    T key;
+    public T key;
     BinaryNode left;
     BinaryNode right;
 

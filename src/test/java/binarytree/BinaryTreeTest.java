@@ -26,5 +26,15 @@ class BinaryTreeTest {
         System.out.println("size"+size);
         Assertions.assertEquals(arr.length,size);
     }
+    @Test
+    void searchForAnElementInBinaryTree() {
+        BinaryTree<Integer> binaryTree = new BinaryTree();
+        int[] arr = {3,11,16,22,30,40,56,70,60,95,65,63,67};
+        for (int i : arr) {
+            binaryTree.add(i);
+        }
+        int size = binaryTree.getSize();
+        Assertions.assertTrue(binaryTree.containsNode(67));
+    }
 
 }
